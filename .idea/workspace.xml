@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC01/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/verano2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/verano2024.iml" afterDir="false" />
-    </list>
+    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="Box and Board basic def" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,11 +86,20 @@
       <option name="project" value="LOCAL" />
       <updated>1722782157497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Box and Board basic def">
+      <option name="closed" value="true" />
+      <created>1723077586282</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723077586282</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Box and Board basic def" />
+    <option name="LAST_COMMIT_MESSAGE" value="Box and Board basic def" />
   </component>
 </project>
