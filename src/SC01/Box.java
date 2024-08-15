@@ -1,9 +1,8 @@
 package SC01;
 
 import processing.core.PApplet;
-import processing.core.PConstants;
 
-public class Box {
+class Box {
     public enum VALUE {BLANK, NOUGHT, CROSS}
     VALUE value;
     int row, column;
