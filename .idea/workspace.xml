@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="Board basic def">
-      <change afterPath="$PROJECT_DIR$/src/SC02/Colors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC02/Figura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC02/Matrius.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC02/Tauler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SC02/Tetris.java" afterDir="false" />
+    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="TicTacToe finalitzat&#10;Tetris: Fins apartat 9">
+      <change afterPath="$PROJECT_DIR$/src/SC02/FiguraI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SC01/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC01/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SC01/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC01/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SC01/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC01/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SC02/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Figura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SC02/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Tauler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SC02/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Tetris.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <recent name="SC02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
+  <component name="RunManager" selected="Application.Tetris">
     <configuration name="Tetris" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SC02.Tetris" />
       <module name="verano2024" />
@@ -87,8 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.Tetris" />
+        <item itemvalue="Application.TicTacToe" />
       </list>
     </recent_temporary>
   </component>
@@ -132,13 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723077645648</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TicTacToe finalitzat&#10;Tetris: Fins apartat 9">
+      <option name="closed" value="true" />
+      <created>1723720788773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723720788773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Box and Board basic def" />
     <MESSAGE value="Board basic def" />
-    <option name="LAST_COMMIT_MESSAGE" value="Board basic def" />
+    <MESSAGE value="Fins apartat 9" />
+    <MESSAGE value="TicTacToe finalitzat&#10;Tetris: Fins apartat 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe finalitzat&#10;Tetris: Fins apartat 9" />
   </component>
 </project>

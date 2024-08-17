@@ -27,10 +27,10 @@ class Tauler {
         this.altCella = h / numFiles;
     }
 
-    public void inicialitzaTauler(){
+    public void inicialitzaCaselles(){
         caselles = new Figura.TIPUS_FIGURA [numFiles][numCols];
-        for(int c = 0; c<numFiles; c++){
-            for (int f = 0; f<numCols; f++){
+        for(int c = 0; c<numCols; c++){
+            for (int f = 0; f<numFiles; f++){
                 caselles[f][c] = Figura.TIPUS_FIGURA.BUIDA;
             }
         }
@@ -57,7 +57,19 @@ class Tauler {
                 if(fig.matriu[f][c]==1){
                     p5.fill(colors[fig.tipusFigura.ordinal()]);
                     p5.stroke(0);
-                    p5.rect(ct*ampleCella, ft*altCella,ampleCella,altCella);
+                    p5.rect(ct*ampleCella,ft*altCella,ampleCella,altCella);
+                }
+            }
+        }
+    }
+
+    void aplicaFigura(Figura fig){
+        for(int f = 0; f<fig.matriu.length; f++){
+            for(int c = 0; c<fig.matriu[0].length; c++){
+                if(fig.matriu[f][c]==1){
+                    int ct = c + fig.col;
+                    int ft = f + fig.fila;
+                    this.caselles[ft][ct] = fig.tipusFigura;
                 }
             }
         }
