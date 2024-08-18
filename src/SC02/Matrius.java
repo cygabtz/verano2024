@@ -2,10 +2,10 @@ package SC02;
 
 class Matrius {
     public static final int[][] matrizI = {
-        {0, 0, 1, 1},
-        {0, 0, 1, 1},
-        {0, 0, 1, 1},
-        {0, 0, 1, 1}
+        {0, 0, 1, 0},
+        {0, 0, 1, 0},
+        {0, 0, 1, 0},
+        {0, 0, 1, 0}
     };
     public static final int[][] matrizS = {
         {0, 1, 1},

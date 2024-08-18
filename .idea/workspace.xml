@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="TicTacToe finalitzat&#10;Tetris: Fins apartat 9">
-      <change afterPath="$PROJECT_DIR$/src/SC02/FiguraI.java" afterDir="false" />
+    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="Tetris: Fins apartat 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SC02/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Figura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SC02/Matrius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Matrius.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SC02/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Tauler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SC02/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Tetris.java" afterDir="false" />
     </list>
@@ -136,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723720788773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tetris: Fins apartat 13">
+      <option name="closed" value="true" />
+      <created>1723892140572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723892140572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +153,17 @@
     <MESSAGE value="Board basic def" />
     <MESSAGE value="Fins apartat 9" />
     <MESSAGE value="TicTacToe finalitzat&#10;Tetris: Fins apartat 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe finalitzat&#10;Tetris: Fins apartat 9" />
+    <MESSAGE value="Tetris: Fins apartat 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tetris: Fins apartat 13" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

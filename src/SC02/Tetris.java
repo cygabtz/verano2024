@@ -4,9 +4,11 @@ import processing.core.PApplet;
 public class Tetris extends PApplet {
     Tauler t;
     Colors colorTetris;
-    Figura[] figures;
-    int numFigures = 0;
     Figura figActual;
+    int speed = 30;
+    int numLinies = 0;
+
+    boolean gameOver = false;
 
     public void settings(){
         size(800, 800);
@@ -19,36 +21,63 @@ public class Tetris extends PApplet {
     public void setup(){
         t = new Tauler(10, 20, 200, 0, 400, 800);
         t.inicialitzaCaselles();
-
         colorTetris = new Colors(this);
 
-        figures = new Figura[10];
-
         figActual = Figura.creaFiguraRandom(this, t);
-        figures[numFigures] = figActual;
-        numFigures++;
     }
 
     public void draw(){
+        //Lógica
+        if(frameCount % speed == 0){
+            if (!figActual.mouBaix(t)) {
+                print("no mou baix");
+                if(figActual.fila == 0){
+                    gameOver = true;
+                }
+                else{
+                    t.afegirFigura(figActual);
+                    t.aplicaFigura(figActual);
+                    figActual = Figura.creaFiguraRandom(this, t);
+                    //t.printTauler();
+                }
+            }
+        }
+        else {
+            // Comprovar línies
+            boolean[] plenes = t.comprovaFilesPlenes();
+            for (int f = 0; f < plenes.length; f++) {
+                if (plenes[f] == true) {
+                    t.baixarFiguresAbansDe(f);
+                    numLinies++;
+                    println("NUM LÍNIES: " + numLinies);
+                }
+            }
+        }
 
-        dibuixaJoc();
+        //Dibuix
+        if(gameOver){
+            dibuixaPantallaResultat();
+        }
+        else {
+            dibuixaJOC();
+        }
     }
 
-    public void dibuixaJoc(){
+    public void dibuixaJOC(){
         background(200);
-        // Escenari de joc
         pushMatrix();
             translate(t.x, t.y);
 
-            // Graella del tauler.
-            t.dibuixaGraella(this,colorTetris.colorBUIT);
-
-            // Figures de l'array
-            for(int i=0; i<numFigures; i++) {
-                t.dibuixaFigura(this, figActual, colorTetris.colors);
-            }
+            t.dibuixaCaselles(this,colorTetris.colorBUIT,colorTetris.colors);
+            t.dibuixaFigura(this, figActual, colorTetris.colors);
         popMatrix();
+
+        // Marcador
+        fill(0); textAlign(LEFT); textSize(20);
+        text("Figures:" + t.numFigures, 50, 50);
+        text("Línies:" + numLinies, 50, 70);
     }
+
 
 
     public void keyPressed(){
@@ -65,10 +94,28 @@ public class Tetris extends PApplet {
             figActual.mouTopeBaix(t);
         }
         else if(key=='r' || key=='R'){
-            figActual.rota();
+            figActual.rota(t);
         }
 
     }
 
+    public void dibuixaPantallaResultat(){
+        // Dibuixa el fons
+        background(255, 100, 100);
+
+        fill(0); textAlign(CENTER); textSize(50);
+
+        // Missatge de final de partida
+        textSize(100);
+        text("GAME OVER", width / 2, height / 2);
+
+        // Número de figures col·locades en el tauler
+        textSize(30);
+        text("FIGURES:" + t.numFigures, width / 2, height / 2 + 100);
+
+        // Número de línies resoltes
+        textSize(30);
+        text("LÍNIES:" + numLinies, width / 2, height / 2 + 200);
+    }
 
 }

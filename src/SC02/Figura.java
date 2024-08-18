@@ -63,7 +63,7 @@ class Figura {
      */
     public static Figura creaFiguraRandom(PApplet p5, Tauler t){
         int numFiguresDiferents = Figura.TIPUS_FIGURA.values().length;
-        int n = (int) p5.random(0, numFiguresDiferents);
+        int n = (int) p5.random(1, numFiguresDiferents);
         Figura.TIPUS_FIGURA [] arrayFig = Figura.TIPUS_FIGURA.values();
 
         return creaFigura(p5, arrayFig[n], t);
@@ -161,16 +161,44 @@ class Figura {
         return q;
     }
 
-    //Canviar
-    void rota(){
+//    void rota(){
+//        int[][] q = this.copia();
+//
+//        for(int f = 0; f< matriu.length; f++){
+//            for(int c = 0; c< matriu[0].length; c++){
+//                matriu[f][c]=q[matriu.length - c -1][f];
+//            }
+//        }
+//    }
 
+    void rota(Tauler t){
         int[][] q = this.copia();
+        int[][] temp = this.copia();
 
         for(int f = 0; f< matriu.length; f++){
             for(int c = 0; c< matriu[0].length; c++){
-                matriu[f][c]=q[matriu.length - c -1][f];
+                temp[f][c]=q[matriu.length - c -1][f];
             }
+        }
+
+        if(esRotable(t, temp, this.fila, this.col)){
+            this.matriu = temp;
         }
     }
 
+    boolean esRotable(Tauler t, int[][] matriuRot, int ff, int cf){
+        for(int f = 0; f< matriuRot.length; f++){
+            for(int c = 0; c< matriuRot[0].length; c++){
+                if (matriuRot[f][c]==1) {
+                    if(ff+f<0 || cf+c<0 || ff+f >t.numFiles || cf+c>t.numCols){
+                        return false;
+                    }
+                    else if((matriuRot[f][c]!=0 && t.caselles[ff+f][cf+c]!= TIPUS_FIGURA.BUIDA)){
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
 }
