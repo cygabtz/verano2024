@@ -2,7 +2,7 @@ package SC02;
 
 import processing.core.PApplet;
 
-public class Colors {
+class Colors {
     int colorBUIT;
     int colorI, colorS, colorSI, colorT, colorL, colorLI, colorO;
     int[] colors;

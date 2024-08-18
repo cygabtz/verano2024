@@ -4,11 +4,13 @@
       <root url="jar://$USER_HOME$/Documents/processing-4.3/core/library/core.jar!/" />
       <root url="jar://$USER_HOME$/Documents/processing-4.3/core/library/gluegen-rt.jar!/" />
       <root url="jar://$USER_HOME$/Documents/processing-4.3/core/library/jogl-all.jar!/" />
+      <root url="file://$USER_HOME$/Documents/Processing/libraries/sound/library" />
     </CLASSES>
     <JAVADOC />
     <NATIVE>
       <root url="file://$USER_HOME$/Documents/processing-4.3/core/library/windows-amd64" />
     </NATIVE>
     <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Documents/Processing/libraries/sound/library" recursive="false" />
   </library>
 </component>

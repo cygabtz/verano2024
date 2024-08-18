@@ -1,5 +1,6 @@
 package SC02;
 import processing.core.PApplet;
+import processing.sound.*;
 
 public class Tetris extends PApplet {
     Tauler t;
@@ -7,6 +8,9 @@ public class Tetris extends PApplet {
     Figura figActual;
     int speed = 30;
     int numLinies = 0;
+
+    SoundFile musicaTetris;
+    boolean musicaOnOff = true;
 
     boolean gameOver = false;
 
@@ -24,6 +28,9 @@ public class Tetris extends PApplet {
         colorTetris = new Colors(this);
 
         figActual = Figura.creaFiguraRandom(this, t);
+
+        musicaTetris = new SoundFile(this, "tetris.mp3");
+        musicaTetris.play();
     }
 
     public void draw(){
@@ -96,6 +103,16 @@ public class Tetris extends PApplet {
         else if(key=='r' || key=='R'){
             figActual.rota(t);
         }
+        else if(key =='s' || key =='S'){
+            musicaOnOff = !musicaOnOff;
+            if(musicaOnOff){
+                musicaTetris.loop();
+            }
+            else {
+                musicaTetris.stop();
+            }
+        }
+
 
     }
 
