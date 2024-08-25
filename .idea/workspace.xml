@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="Tetris: Finalitzat">
-      <change afterPath="$PROJECT_DIR$/data/tetris.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/core.xml" afterDir="false" />
+    <list default="true" id="2c563617-4621-4b7b-9940-c84ae9e88072" name="Changes" comment="Tetris: Sound added">
+      <change afterPath="$PROJECT_DIR$/data/EvilEmpire.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Sono.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cannon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/explosio.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/impacte.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SC03/Projectil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SC03/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SC03/TirParabolic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SC02/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Colors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SC02/Tetris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SC02/Tetris.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -41,11 +48,13 @@
     "Application.Selector.executor": "Run",
     "Application.Tetris.executor": "Run",
     "Application.TicTacToe.executor": "Run",
+    "Application.TirParabolic.executor": "Run",
+    "Application.TirParabolic2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/benit/Documents/Processing/libraries/sound/library",
+    "last_opened_file_path": "C:/Users/benit/IdeaProjects/verano2024/src/Prova",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -59,7 +68,7 @@
       <recent name="SC02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tetris">
+  <component name="RunManager" selected="Application.TirParabolic">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="verano2024" />
@@ -87,12 +96,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SC01.TicTacToe" />
+    <configuration name="TirParabolic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SC03.TirParabolic" />
       <module name="verano2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SC01.*" />
+          <option name="PATTERN" value="SC03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TirParabolic2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SC03.TirParabolic2" />
+      <module name="verano2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SC03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,10 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TirParabolic" />
+        <item itemvalue="Application.TirParabolic2" />
         <item itemvalue="Application.Tetris" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Selector" />
-        <item itemvalue="Application.TicTacToe" />
       </list>
     </recent_temporary>
   </component>
@@ -173,8 +196,27 @@
       <option name="project" value="LOCAL" />
       <updated>1723978793895</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tetris: Sound added">
+      <option name="closed" value="true" />
+      <created>1723983841116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723983841116</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
@@ -184,7 +226,8 @@
     <MESSAGE value="TicTacToe finalitzat&#10;Tetris: Fins apartat 9" />
     <MESSAGE value="Tetris: Fins apartat 13" />
     <MESSAGE value="Tetris: Finalitzat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tetris: Finalitzat" />
+    <MESSAGE value="Tetris: Sound added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tetris: Sound added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
